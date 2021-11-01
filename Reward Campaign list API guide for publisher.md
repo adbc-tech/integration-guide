@@ -49,7 +49,7 @@ Campaign list API 연동이 필요 없을 경우, \
 | campaigns.end_date | 종료일 | 2019-06-30T23:45:00+0900 |  |
 | campaigns.click_cap | 일일 캡 | 500 |  |
 | campaigns.click_remain_cap | 당일 남은 캡 | 150 |  |
-| campaigns.frequency | 디바이스당 노출 제한 | 5 |  |
+| campaigns.frequency | 한 디바이스당 클릭 발생 후 24시간동안 노출 제한수 | 5 |  |
 | campaigns.img_link | 소재 이미지 링크 |  |  |
 | campaigns.guideline | 가이드라인 |  |  |
 | campaigns.currency | 재화단위 | KRW |  |
