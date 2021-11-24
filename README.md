@@ -20,6 +20,9 @@
 
 [4.Reward CPC 연동 가이드](https://github.com/adbc-tech/integration-guide/blob/master/Reward%20Campaign%20list%20API%20guide%20for%20publisher.md)
 
+[5.Reward API 연동 가이드](https://github.com/adbc-tech/integration-guide/blob/master/Reward%20Campaign%20API%20guide%20for%20publisher.md)
+
+
 ## Authors
 
 * **CHOI BAWOO** - *Integration technical support* - bw@adbc.co.kr
