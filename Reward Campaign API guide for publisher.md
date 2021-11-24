@@ -119,7 +119,7 @@ camp -> ctv 세부 항목
 |항목|형태|내용|
 |------|------|------|
 |result|int|처리 결과 코드|
-|nstkey|string|설치 확인 성공일 경우 전송되는 유니크한 구분 데이터|
+|tid|string|설치 확인 성공일 경우 전송되는 유니크한 구분 데이터|
 
 ---
 # 4.실적 전송
@@ -133,7 +133,7 @@ camp -> ctv 세부 항목
 |항목|형태|설명|비고|
 |------|------|------|------|
 |cbparam| string | 캠페인 참여시 보냈던 cbparam값 |  |
-|nstkey| string | 실적에 대한 유니크값 (transaction ID) |  |
+|tid| string | 실적에 대한 유니크값 (transaction ID) |  |
 |subpid| string | 하위 매체 구분값 | optional |
 |userid| string | 참여 유저 식별값 |  |
 |campid| int | 캠페인 식별값 |  |
@@ -142,7 +142,7 @@ camp -> ctv 세부 항목
 
 ### 예시
 
-https://postback.com?clk_id={cbparam}&tid={nstkey}&aff_id={subpid}&uid={userid}&cid={campid}&price={price}
+https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid={campid}&price={price}
 
 
 
