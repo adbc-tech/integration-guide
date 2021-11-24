@@ -3,7 +3,7 @@
 ### Getting Started
 
 - 본 가이드는 ADBC와 매체사간의 S2S API 연동에 대한 내용입니다 
-
+---
 # 1.캠페인 리스트 조회 API
 
 - 5분 주기로 업데이트 받는 것을 추천드립니다
@@ -52,6 +52,8 @@ camp -> ctv 세부 항목
 
 
 
+
+---
 # 2.캠페인 참여 요청 API
 
 
@@ -91,7 +93,7 @@ camp -> ctv 세부 항목
 |result|int|처리 결과 코드|
 |lurl|string|캠페인 랜딩 URL|
 
-
+---
 # 3.CPI 설치 확인 API
 - 본 항목은 CPI 캠페인만 해당하는 API입니다
 - CPI 캠페인은 매체사가 직접 사용자가 해당 앱의 설치 여부를 확인한 후, 이 API를 통해 설치 완료 요청을 해야 합니다
@@ -120,7 +122,7 @@ camp -> ctv 세부 항목
 |result|int|처리 결과 코드|
 |nstkey|string|설치 확인 성공일 경우 전송되는 유니크한 구분 데이터|
 
-
+---
 # 4.실적 전송
 
 - 캠페인을 정상적으로 참여 완료했을 때, 매체사 서버로 리워드 적립 요청을 보냅니다
@@ -145,7 +147,7 @@ https://postback.com?clk_id={cbparam}&tid={nstkey}&aff_id={subpid}&uid={userid}&
 
 
 
-
+---
 ## 공통
 - result로 반환되는 코드 목록입니다
 
