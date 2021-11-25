@@ -72,6 +72,7 @@ camp -> ctv 세부 항목
 
 |항목|형태|내용|비고|
 |------|------|------|------|
+|p|int|플랫폼|Android : 1, iOS : 2|
 |cbparam|string|매체사에서 정의한 파라미터||
 |aff_id|string|매체사의 하위 매체 아이디 (최대 길이: 100)||
 |userid|string|참여 유저 식별값 (최대 길이: 100)||
@@ -111,10 +112,10 @@ camp -> ctv 세부 항목
 
 |항목|형태|내용|비고|
 |------|------|------|------|
+|p|int|플랫폼|Android : 1, iOS : 2|
 |campid|int|캠페인 식별값||
 |userid|string|참여 유저 식별값 (최대 길이: 100)||
 |adid|string|AOS = adid, iOS = idfa||
-|accid|string|AOS = android id, iOS = idfv||
 |wvid|string|Widevine DRM용 ID값 - AOS인 경우|권장|
 |wvslv|string|Widevine security level(L1/l3) - AOS인 경우|권장|
 |ip|string|참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가)|권장|
