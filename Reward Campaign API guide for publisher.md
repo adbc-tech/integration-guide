@@ -8,7 +8,7 @@
 
 - 5분 주기로 업데이트 받는 것을 추천드립니다
 - method : GET
-- url : http://api.adbc.io/api/v1/reward/campaigns
+- url : http://api.adbc.io/api/v2/reward/campaigns
 - parameter : token (필수)
 - 요청 예시 : http://api.adbc.io/api/v1/reward/campaigns?token={token}
 - token은 발급 후 전달드립니다
