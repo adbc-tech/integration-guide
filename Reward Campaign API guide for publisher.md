@@ -13,7 +13,8 @@
 
 |항목|설명|비고|
 |------|------|------|
-|token|매체키| 매체 고유 코드|
+|token|매체사 식별키| |
+|appkey|광고 인벤토리 식별키| |
 |p|플랫폼|Android : 1, iOS : 2|
 - 요청 예시 : http://api.adbc.io/api/v1/reward/campaigns?token={token}
 - token은 발급 후 전달드립니다
@@ -72,7 +73,8 @@ camp -> ctv 세부 항목
 
 |항목|형태|내용|비고|
 |------|------|------|------|
-|token|string| 매체 고유 코드||
+|token|string|매체사 식별키||
+|appkey|int|광고 인벤토리 식별키||
 |p|int|플랫폼|Android : 1, iOS : 2|
 |cbparam|string|매체사에서 정의한 파라미터||
 |aff_id|string|매체사의 하위 매체 아이디 (최대 길이: 100)||
@@ -113,7 +115,8 @@ camp -> ctv 세부 항목
 
 |항목|형태|내용|비고|
 |------|------|------|------|
-|token|string| 매체 고유 코드||
+|token|string|매체사 식별키||
+|appkey|int|광고 인벤토리 식별키||
 |p|int|플랫폼|Android : 1, iOS : 2|
 |campid|int|캠페인 식별값||
 |userid|string|참여 유저 식별값 (최대 길이: 100)||
