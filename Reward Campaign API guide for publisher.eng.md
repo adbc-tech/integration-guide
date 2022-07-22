@@ -48,7 +48,7 @@
 
 
 
-* camp.ctv 세부 항목
+* camp.ctv
 
 | variable | type   | description                       |
 |----------|--------|-----------------------------------|
