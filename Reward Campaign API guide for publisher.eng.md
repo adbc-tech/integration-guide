@@ -83,8 +83,6 @@
 | osver     | string | OS version                               | mandatory                      |
 | ip        | string | IP address                               | mandatory                      |
 | adid      | string | AOS = adid, iOS = idfa                   | mandatory                      |
-| accid     | string | AOS = android id, iOS = idfv             |                                |
-| devid     | string | AOS = imei, iOS = uuid                   |                                |
 | devmodel  | string | device model name                        |                                |
 | devbrand  | string | device brand name                        |                                |
 | mnetwork  | int    | device network                           | 1: 3G, 2: 4G, 3: 5G, 4: WIFI   |

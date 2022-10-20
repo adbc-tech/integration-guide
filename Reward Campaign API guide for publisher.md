@@ -71,28 +71,24 @@ camp -> ctv 세부 항목
 - url : https://adbc.io/reward/v3/join
 - parameter : 
 
-|항목|형태|내용|비고|
-|------|------|------|------|
+|항목|형태|내용| 비고                         |
+|------|------|------|----------------------------|
 |token|string|매체사 식별키||
-|p|int|플랫폼|Android : 1, iOS : 2|
+|p|int|플랫폼| Android : 1, iOS : 2       |
 |cbparam|string|매체사에서 정의한 파라미터||
 |aff_id|string|매체사의 하위 매체 아이디 (최대 길이: 100)||
 |userid|string|참여 유저 식별값 (최대 길이: 100)||
 |campid|int|캠페인 식별값||
 |osver|string|참여 단말기 OS 버전 정보||
 |ip|string|참여 단말기 IP 정보||
-|adid|string|AOS = adid, iOS = idfa||
-|accid|string|AOS = android id, iOS = idfv|권장|
-|devid|string|AOS = imei, iOS = uuid|권장|
-|wvid|string|Widevine DRM용 ID값 - AOS인 경우|권장|
-|wvslv|string|Widevine security level(L1/l3) - AOS인 경우|권장|
-|devmodel|string|참여 단말기 모델 정보|권장|
-|devbrand|string|참여 단말기 제조자 정보|권장|
-|mnetwork|int|참여 단말기 네트워크 정보|1: 3G, 2: 4G, 3: 5G, 4: WIFI|
-|carrier|int|참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수)|권장, 1: KT, 2: LGU+, 3: SKT|
-|ga|string|참여 단말기의 구글 계정을 sha1 암호화|권장|
+|adid|string|AOS = adid, iOS = idfa|                            |
+|devmodel|string|참여 단말기 모델 정보| 권장                         |
+|devbrand|string|참여 단말기 제조자 정보| 권장                         |
+|mnetwork|int|참여 단말기 네트워크 정보| 1: 3G, 2: 4G, 3: 5G, 4: WIFI |
+|carrier|int|참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수)| 권장, 1: KT, 2: LGU+, 3: SKT |
+|ga|string|참여 단말기의 구글 계정을 sha1 암호화| 권장                         |
 |age|int|유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)||
-|gender|int|참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)|0: 모름, 1: 남자, 2: 여자|
+|gender|int|참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)| 0: 모름, 1: 남자, 2: 여자        |
 
 ### 응답
 |항목|형태|내용|
