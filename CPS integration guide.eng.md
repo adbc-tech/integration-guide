@@ -17,7 +17,7 @@ This guide is for CPS integration.
 
 # 1.Tracking link integration
 
-- url : http://adbc.io/{campaign_code}/{publisher_code}
+- url : https://adbc.io/{campaign_code}/{publisher_code}
 - method : GET
 - {campaign_code} and {publisher_code} is automatically created and delivered when the link is issued by ADBC
 - parameters : 
@@ -39,7 +39,7 @@ This guide is for CPS integration.
 
 # 2.Report API integration
 
-- url : http://api.adbc.io/api/cps/report
+- url : https://api.adbc.io/api/cps/report
 - method : GET
 - content-type : application/json;utf-8
 - Token value can be issued by requesting ADBC support team  

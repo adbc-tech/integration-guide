@@ -15,7 +15,7 @@
 
 # 1.링크 연동
 
-- url : http://adbc.io/{campaign_code}/{publisher_code}
+- url : https://adbc.io/{campaign_code}/{publisher_code}
 - method : GET
 - {campaign_code} 와 {publisher_code}는 ADBC에서 링크 발급시 자동으로 생성되어 전달됩니다
 - parameters : 
@@ -37,7 +37,7 @@
 
 # 2.리포트 API 연동
 
-- url : http://api.adbc.io/api/cps/report
+- url : https://api.adbc.io/api/cps/report
 - method : GET
 - content-type : application/json;utf-8
 - token값은 ADBC support팀에게 요청하여 발급 가능합니다  

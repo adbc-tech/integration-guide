@@ -14,9 +14,9 @@ Campaign list API 연동이 필요 없을 경우, \
 - 1분마다 실데이터로 반영되므로 1분 주기로 업데이트 받는 것을 추천드립니다
   - **클라이언트에서 직접 호출 금지. 서버에서 요청 후 캐싱하여 사용하여야합니다**
 - method : GET
-- domain : http://api.adbc.io/api/v1/reward/campaigns
+- domain : https://api.adbc.io/api/v1/reward/campaigns
 - parameter : token (mandatory), page (optional)
-- 요청 예시 : http://api.adbc.io/api/v1/reward/campaigns?token={token}&page=1
+- 요청 예시 : https://api.adbc.io/api/v1/reward/campaigns?token={token}&page=1
 - token은 발급 후 전달드립니다
 
 
@@ -99,7 +99,7 @@ https://adbc.io?sub1={click_id}&aff_id={affiliate_id}&gaid={gaid}&idfa={idfa}
 
 - ###### 포스트백 예시
 ```
-http://postback.publisher.com?click_id={sub1}&aid={gaid}&idfa={idfa}
+https://postback.publisher.com?click_id={sub1}&aid={gaid}&idfa={idfa}
 ```
 
 ## Authors

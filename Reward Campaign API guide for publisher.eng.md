@@ -8,14 +8,14 @@
 
 - Recommend updating every 5 minutes
 - method : GET
-- url : http://api.adbc.io/api/v3/reward/campaigns
+- url : https://api.adbc.io/api/v3/reward/campaigns
 - parameter : token (Mandatory), p (Mandatory)
 
 | parameter | description | remark               |
 |-----------|-------------|----------------------|
 | token     | API_KEY     |                      |
 | p         | platform    | Android : 1, iOS : 2 |
-- e.g) : http://api.adbc.io/api/v3/reward/campaigns?token={token}
+- e.g) : https://api.adbc.io/api/v3/reward/campaigns?token={token}
   
 
 
