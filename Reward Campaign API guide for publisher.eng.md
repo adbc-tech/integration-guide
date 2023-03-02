@@ -29,7 +29,8 @@
 | camp.name          | string | campaign name                          |                                                     |
 | camp.bm            | int    | campaign type                          | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: etc                 |
 | camp.package       | string | package name or url scheme             | android: package name, iOS: custom url              |
-| camp.price         | int    | revenue                                |                                                     |
+| camp.price         | int    | revenue                                | 100                                                 |
+| camp.price_dollar  | float  | revenue                                | 0.01                                                |
 | camp.rewarddesc    | string | requirements for earning rewards       | ex) registration completed after installing the app |
 | camp.joindesc      | string | description for join campaign          |                                                     |
 | camp.totalquantity | int    | available quantity                     | 0: infinity                                         |
@@ -141,6 +142,7 @@
 | userid | string | user identification ID                    |          |
 | campid | int    | campaign ID                      |          |
 | price | int    | revenue                          |          |
+| price_dollar | float    | revenue                          |          |
 
 
 ### sample)
