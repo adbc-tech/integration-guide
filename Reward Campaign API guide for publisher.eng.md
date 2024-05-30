@@ -20,32 +20,33 @@
 
 
 
-| variable           | type   | description                            | remark                                              |
-|--------------------|--------|----------------------------------------|-----------------------------------------------------|
-| result             | int    | result code                            | 200 is success. see below result code table         |
-| cnt                | int    | number of campaigns                    |                                                     |
-| camp               | array  | campaign list                          |                                                     |
-| camp.campid        | int    | campaign ID                            |                                                     |
-| camp.name          | string | campaign name                          |                                                     |
-| camp.bm            | int    | campaign type                          | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: etc                 |
-| camp.package       | string | package name or url scheme             | android: package name, iOS: custom url              |
-| camp.price         | int    | revenue                                | 100                                                 |
-| camp.price_dollar  | float  | revenue                                | 0.01                                                |
-| camp.rewarddesc    | string | requirements for earning rewards       | ex) registration completed after installing the app |
-| camp.joindesc      | string | description for join campaign          |                                                     |
-| camp.totalquantity | int    | available quantity                     | 0: infinity                                         |
-| camp.quantity      | int    | daily capacity                         | 0: infinity                                         |
-| camp.enddate       | string | end date                               | date format : YYYYMMDD. empty value is infinity     |
-| camp.targetcarrier | string | carrier targeting                      | empty value: no target, 1: KT, 2: LGU+, 3: SKT      |
-| camp.targetgender  | int    | gender targeting                       | 0: no target, 1: male, 2: female                    |
-| camp.targetagemin  | int    | minimum age                            | 0: no target                                        |
-| camp.targetagemax  | int    | maximum age                            | 0: no target                                        |
-| camp.targetpkg     | string | app package name targeting. AOS only   |                                                     |
-| camp.detargetpkg   | string | app package name detargeting. AOS only |                                                     |
-| camp.iconurl       | string | icon image url                         |                                                     |
-| camp.ctv           | array  | promotional image information          | see below ctv table                                 |
-| camp.cpsprice(*)   | int    | price before discount                  | when bm is 4(CPS) only                              |
-| camp.cpsdcprice(*) | int    | price after discount                   | when bm is 4(CPS) only                              |
+| variable           | type   | description                            | remark                                                                                |
+|--------------------|--------|----------------------------------------|---------------------------------------------------------------------------------------|
+| result             | int    | result code                            | 200 is success. see below result code table                                           |
+| cnt                | int    | number of campaigns                    |                                                                                       |
+| camp               | array  | campaign list                          |                                                                                       |
+| camp.campid        | int    | campaign ID                            |                                                                                       |
+| camp.name          | string | campaign name                          |                                                                                       |
+| camp.bm            | int    | campaign type                          | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: etc                                                   |
+| camp.sub_type      | int    | campaign sub type(bm=1 only)           | 0: default, 1: save place, 2:quiz, 3:favorite store, 4:store notification, 5: youtube |
+| camp.package       | string | package name or url scheme             | android: package name, iOS: custom url                                                |
+| camp.price         | int    | revenue                                | 100                                                                                   |
+| camp.price_dollar  | float  | revenue                                | 0.01                                                                                  |
+| camp.rewarddesc    | string | requirements for earning rewards       | ex) registration completed after installing the app                                   |
+| camp.joindesc      | string | description for join campaign          |                                                                                       |
+| camp.totalquantity | int    | available quantity                     | 0: infinity                                                                           |
+| camp.quantity      | int    | daily capacity                         | 0: infinity                                                                           |
+| camp.enddate       | string | end date                               | date format : YYYYMMDD. empty value is infinity                                       |
+| camp.targetcarrier | string | carrier targeting                      | empty value: no target, 1: KT, 2: LGU+, 3: SKT                                        |
+| camp.targetgender  | int    | gender targeting                       | 0: no target, 1: male, 2: female                                                      |
+| camp.targetagemin  | int    | minimum age                            | 0: no target                                                                          |
+| camp.targetagemax  | int    | maximum age                            | 0: no target                                                                          |
+| camp.targetpkg     | string | app package name targeting. AOS only   |                                                                                       |
+| camp.detargetpkg   | string | app package name detargeting. AOS only |                                                                                       |
+| camp.iconurl       | string | icon image url                         |                                                                                       |
+| camp.ctv           | array  | promotional image information          | see below ctv table                                                                   |
+| camp.cpsprice(*)   | int    | price before discount                  | when bm is 4(CPS) only                                                                |
+| camp.cpsdcprice(*) | int    | price after discount                   | when bm is 4(CPS) only                                                                |
 
 
 
