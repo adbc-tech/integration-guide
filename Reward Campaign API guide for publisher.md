@@ -29,6 +29,7 @@
 | camp.name          | string | 캠페인명                                   |                                                            |
 | camp.bm            | int    | 캠페인 유형                                 | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: 기타                         |
 | camp.sub_type      | int    | 캠페인 하위 유형(bm 값이 1일 경우)                 | 0: 기본, 1: 플레이스 저장하기, 2:퀴즈맞추기, 3:스토어상품찜, 4:스토어 알림받기, 5: 유튜브 |
+| camp.detail_type   | string | 캠페인 하위 유형(bm 값이 1일 경우)                 | *아래 표 참고                                                   |
 | camp.package       | string | 패키지네임 또는 url scheme                    | android: package name, iOS: custom url                     |
 | camp.price         | int    | 캠페인 집행 단가 (=매체비)                       | 100                                                        |
 | camp.price_dollar  | float  | 캠페인 집행 단가 (=매체비)                       | 0.01                                                       |
@@ -58,7 +59,28 @@ camp -> ctv 세부 항목
 |type|int| 2:세로형 소재, 720*780  |
 |url|string| 소재 url                        |
 
+camp -> detail_type 세부 항목
 
+| detail_type                  | 설명                |
+|------------------------------|-------------------|
+| place_save_default           | 기본 플레이스 저장하기      |
+| place_save_share             | 플레이스 URL 공유하기     |
+| place_save_click             | 업체 클릭 후 저장        |
+| place_save_home              | 플레이스 홈 저장         |
+| place_save_keep              | keep 공유           |
+| place_save_noti              | 알림받기              |
+| cpc_detail_ceo_name          | 대표자명 맞추기          |
+| cpc_detail_click_tag         | 상품 클릭 후 태그 단어 맞추기 |
+| cpc_detail_click_ceo_name    | 상품 클릭 후 대표자명 맞추기  |
+| cpc_detail_place             | 플레이스 퀴즈           |
+| pick_shop_default            | 기본 상품찜            |
+| pick_shop_click              | 상품 클릭 후 상품찜       |
+| receive_notification_default | 기본 알림받기           |
+| receive_notification_click   | 상품 클릭 후 알림받기      |
+| video_length_default         | 시청하기              |
+| youtube_subs_default         | 구독하기              |
+| short_like_default           | 쇼츠 좋아요            |
+| youtube_like_subs_default    | 영상 좋아요 & 채널 구독    |
 
 
 ---
