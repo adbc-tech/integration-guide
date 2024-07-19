@@ -11,6 +11,12 @@
 - url : https://api.adbc.io/api/v3/reward/campaigns
 - parameter : token (필수), p (필수)
 
+
+#### 참고 : 방화벽 등 보안 설정이 되어 있는 경우 아래 주소로 호출해주세요
+- <code>URL : https://api.v3.adbc.io/api/v3/reward/campaigns</code>
+- <code>허용할 IP : 3.37.102.179, 43.202.31.186</code>
+- <code>허용할 Port : 443</code>
+
 |항목|설명|비고|
 |------|------|------|
 |token|매체사 식별키| |
@@ -93,7 +99,12 @@ camp -> detail_type 세부 항목
 ### 요청 
 - method : GET
 - url : https://adbc.io/reward/v3/join
-- parameter : 
+
+#### 참고 : 방화벽 등 보안 설정이 되어 있는 경우 아래 주소로 호출해주세요
+- <code>URL : https://click.adbc.io/reward/v3/join</code>
+- <code>허용할 IP : 3.37.102.179, 43.202.31.186</code>
+- <code>허용할 Port : 443</code> 
+
 
 |항목|형태|내용| 비고                         |
 |------|------|------|----------------------------|
@@ -155,7 +166,12 @@ camp -> detail_type 세부 항목
 
 - 캠페인을 정상적으로 참여 완료했을 때, 매체사 서버로 리워드 적립 요청을 보냅니다
   (폐사에서 직접 적립 처리하지 않습니다)
-- 리워드 적립 요청을 받을 콜백URL을 문서 최하단에 메일로 안내되어 있는 연동 담당자에게 전달합니다 
+- 리워드 적립 요청을 받을 콜백URL을 문서 최하단에 메일로 안내되어 있는 연동 담당자에게 전달합니다
+
+#### 참고 : 방화벽 등 보안 설정이 되어 있는 경우 아래 정보를 허용해주세요
+- <code>도메인 : proxy.adbc.io</code>
+- <code>허용할 IP : 15.165.252.33</code>
+
 
 ### 매크로
 
