@@ -17,10 +17,10 @@
 - <code>허용할 IP : 3.37.102.179, 43.202.31.186</code>
 - <code>허용할 Port : 443</code>
 
-|항목|설명|비고|
-|------|------|------|
-|token|매체사 식별키| |
-|p|플랫폼|Android : 1, iOS : 2|
+| 항목    | 설명      | 필수 | 비고                   |
+|-------|---------|----|----------------------|
+| token | 매체사 식별키 | O  |                      |
+| p     | 플랫폼     | O  | Android : 1, iOS : 2 |
 - 요청 예시 : https://api.adbc.io/api/v3/reward/campaigns?token={token}
 - token은 발급 후 전달드립니다
 
@@ -60,11 +60,11 @@
 
 camp -> ctv 세부 항목
 
-|항목|형태| 설명                            |
-|------|------|-------------------------------|
-|type|int| 1:가로형 소재, 1200*600, 2:1 ratio |
-|type|int| 2:세로형 소재, 720*780  |
-|url|string| 소재 url                        |
+| 항목   | 형태     | 설명                            |
+|------|--------|-------------------------------|
+| type | int    | 1:가로형 소재, 1200*600, 2:1 ratio |
+| type | int    | 2:세로형 소재, 720*780             |
+| url  | string | 소재 url                        |
 
 camp -> detail_type 세부 항목
 
@@ -107,30 +107,30 @@ camp -> detail_type 세부 항목
 - <code>허용할 Port : 443</code> 
 
 
-|항목|형태|내용| 비고                         |
-|------|------|------|----------------------------|
-|token|string|매체사 식별키||
-|p|int|플랫폼| Android : 1, iOS : 2       |
-|cbparam|string|매체사에서 정의한 파라미터||
-|aff_id|string|매체사의 하위 매체 아이디 (최대 길이: 100)||
-|userid|string|참여 유저 식별값 (최대 길이: 100)||
-|campid|int|캠페인 식별값||
-|osver|string|참여 단말기 OS 버전 정보||
-|ip|string|참여 단말기 IP 정보||
-|adid|string|AOS = adid, iOS = idfa|                            |
-|devmodel|string|참여 단말기 모델 정보| 권장                         |
-|devbrand|string|참여 단말기 제조자 정보| 권장                         |
-|mnetwork|int|참여 단말기 네트워크 정보| 1: 3G, 2: 4G, 3: 5G, 4: WIFI |
-|carrier|int|참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수)| 권장, 1: KT, 2: LGU+, 3: SKT |
-|ga|string|참여 단말기의 구글 계정을 sha1 암호화| 권장                         |
-|age|int|유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)||
-|gender|int|참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)| 0: 모름, 1: 남자, 2: 여자        |
+| 항목       | 형태     | 내용                                | 필수 | 비고                                              |
+|----------|--------|-----------------------------------|----|-------------------------------------------------|
+| token    | string | 매체사 식별키                           | O  |
+| p        | int    | 플랫폼                               | O  | Android : 1, iOS : 2                            |
+| cbparam  | string | 매체사에서 정의한 파라미터                    |    | 해당 파라미터에 값을 넣어 보내주시면 포스트백을 통해 다시 전달받을 수 있는 값입니다 |
+| aff_id   | string | 매체사의 하위 매체 아이디 (최대 길이: 100)       |    |                                                 |
+| userid   | string | 참여 유저 식별값 (최대 길이: 100)            | O  |
+| campid   | int    | 캠페인 식별값                           | O  |
+| osver    | string | 참여 단말기 OS 버전 정보                   |    |
+| ip       | string | 참여 단말기 IP 정보                      | O  |
+| adid     | string | AOS = adid, iOS = idfa            | O  |
+| devmodel | string | 참여 단말기 모델 정보                      |    | 권장                                              |
+| devbrand | string | 참여 단말기 제조자 정보                     |    | 권장                                              |
+| mnetwork | int    | 참여 단말기 네트워크 정보                    |    | 1: 3G, 2: 4G, 3: 5G, 4: WIFI                    |
+| carrier  | int    | 참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수) |    | 권장, 1: KT, 2: LGU+, 3: SKT                      |
+| ga       | string | 참여 단말기의 구글 계정을 sha1 암호화           |    | 권장                                              |
+| age      | int    | 유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)       |    |                                                 |
+| gender   | int    | 참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)    |    | 0: 모름, 1: 남자, 2: 여자                             |
 
 ### 응답
-|항목|형태|내용|
-|------|------|------|
-|result|int|처리 결과 코드|
-|lurl|string|캠페인 랜딩 URL|
+| 항목     | 형태     | 내용         |
+|--------|--------|------------|
+| result | int    | 처리 결과 코드   |
+| lurl   | string | 캠페인 랜딩 URL |
 
 ---
 # 3.CPI 설치 확인 API
@@ -144,16 +144,16 @@ camp -> detail_type 세부 항목
 - url : https://adbc.io/reward/v3/inst
 - parameter :
 
-|항목|형태|내용|비고|
-|------|------|------|------|
-|token|string|매체사 식별키||
-|p|int|플랫폼|Android : 1, iOS : 2|
-|campid|int|캠페인 식별값||
-|userid|string|참여 유저 식별값 (최대 길이: 100)||
-|adid|string|AOS = adid, iOS = idfa||
-|wvid|string|Widevine DRM용 ID값 - AOS인 경우|권장|
-|wvslv|string|Widevine security level(L1/l3) - AOS인 경우|권장|
-|ip|string|참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가)|권장|
+| 항목     | 형태     | 내용                                            | 필수      | 비고                   |
+|--------|--------|-----------------------------------------------|---------|----------------------|
+| token  | string |                                               | 매체사 식별키 |                      |
+| p      | int    | 플랫폼                                           |         | Android : 1, iOS : 2 |
+| campid | int    | 캠페인 식별값                                       |         |                      |
+| userid | string | 참여 유저 식별값 (최대 길이: 100)                        |         |                      |
+| adid   | string | AOS = adid, iOS = idfa                        |         |
+| wvid   | string | Widevine DRM용 ID값 - AOS인 경우                   |         | 권장                   |
+| wvslv  | string | Widevine security level(L1/l3) - AOS인 경우      |         | 권장                   |
+| ip     | string | 참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가) |         | 권장                   |
 
 ### 응답
 
@@ -176,15 +176,15 @@ camp -> detail_type 세부 항목
 
 ### 매크로
 
-| 항목           | 형태     |설명|비고|
-|--------------|--------|--|------|
-| cbparam      | string | 캠페인 참여시 보냈던 cbparam값 |  |
-| tid          | string | 실적에 대한 유니크값 (transaction ID) |  |
-| subpid       | string | 하위 매체 구분값 | optional |
-| userid       | string | 참여 유저 식별값 |  |
-| campid       | int    | 캠페인 식별값 |  |
-| price        | int    | 수익금 |  |
-| price_dollar | float  | 수익금 |  |
+| 항목           | 형태     | 설명                           | 비고       |
+|--------------|--------|------------------------------|----------|
+| cbparam      | string | 캠페인 참여시 보냈던 cbparam값         |          |
+| tid          | string | 실적에 대한 유니크값 (transaction ID) |          |
+| subpid       | string | 하위 매체 구분값                    | optional |
+| userid       | string | 참여 유저 식별값                    |          |
+| campid       | int    | 캠페인 식별값                      |          |
+| price        | int    | 수익금                          |          |
+| price_dollar | float  | 수익금                          |          |
 
 
 ### 예시
@@ -199,20 +199,20 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 
 ### result code
 
-|항목|내용|
-|------|------|
-|200|성공|
-|400|잘못된 요청|
-|401|등록되지 않은 매체|
-|402|유저 정보 오류|
-|403|캠페인 정보 오류|
-|405|참여 이력 오류|
-|406|매체 오류|
-|407|타겟팅 매칭 실패|
-|500|종료된 캠페인|
-|501|중복 참여|
-|502|참여할 수 없는 캠페인|
-|900|시스템 오류|
+| 항목  | 내용           |
+|-----|--------------|
+| 200 | 성공           |
+| 400 | 잘못된 요청       |
+| 401 | 등록되지 않은 매체   |
+| 402 | 유저 정보 오류     |
+| 403 | 캠페인 정보 오류    |
+| 405 | 참여 이력 오류     |
+| 406 | 매체 오류        |
+| 407 | 타겟팅 매칭 실패    |
+| 500 | 종료된 캠페인      |
+| 501 | 중복 참여        |
+| 502 | 참여할 수 없는 캠페인 |
+| 900 | 시스템 오류       |
 
 ## Authors
 
