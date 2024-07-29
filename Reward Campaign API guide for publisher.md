@@ -144,16 +144,16 @@ camp -> detail_type 세부 항목
 - url : https://adbc.io/reward/v3/inst
 - parameter :
 
-| 항목     | 형태     | 내용                                            | 필수      | 비고                   |
-|--------|--------|-----------------------------------------------|---------|----------------------|
-| token  | string |                                               | 매체사 식별키 |                      |
-| p      | int    | 플랫폼                                           |         | Android : 1, iOS : 2 |
-| campid | int    | 캠페인 식별값                                       |         |                      |
-| userid | string | 참여 유저 식별값 (최대 길이: 100)                        |         |                      |
-| adid   | string | AOS = adid, iOS = idfa                        |         |
-| wvid   | string | Widevine DRM용 ID값 - AOS인 경우                   |         | 권장                   |
-| wvslv  | string | Widevine security level(L1/l3) - AOS인 경우      |         | 권장                   |
-| ip     | string | 참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가) |         | 권장                   |
+| 항목     | 형태     | 내용                                            | 필수 | 비고                   |
+|--------|--------|-----------------------------------------------|----|----------------------|
+| token  | string | 매체사 식별키                                       | O  |                      |
+| p      | int    | 플랫폼                                           | O  | Android : 1, iOS : 2 |
+| campid | int    | 캠페인 식별값                                       | O  |                      |
+| userid | string | 참여 유저 식별값 (최대 길이: 100)                        | O  |                      |
+| adid   | string | AOS = adid, iOS = idfa                        | O  |
+| wvid   | string | Widevine DRM용 ID값 - AOS인 경우                   |    | 권장                   |
+| wvslv  | string | Widevine security level(L1/l3) - AOS인 경우      |    | 권장                   |
+| ip     | string | 참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가) |    | 권장                   |
 
 ### 응답
 
