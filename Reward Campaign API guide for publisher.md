@@ -90,6 +90,80 @@ camp -> detail_type 세부 항목
 | youtube_like_subs_default    | 영상 좋아요 & 채널 구독    |
 
 
+#### 응답 예시
+```json
+{
+    "result": 200,
+    "cnt": 2,
+    "camp": [
+        {
+          "campid": 415405,
+          "name": "A 강남역 맛집 우대포 강남역점 육회 명소 퀴즈맞추기",
+          "bm": 1,
+          "sub_type": 2,
+          "detail_type": "cpc_detail_click_tag",
+          "price": 20,
+          "price_dollar": 0.014,
+          "rewarddesc": "퀴즈 정답 입력하기",
+          "joindesc": "[참여방법]\r\n1. 미션 페이지 클릭하기\r\n2. 강남역 맛집 우대포 강남역점 육회 <- 복사하기, \r\n3. 붙여넣기 후 해당 플레이스 클릭 -> 주변 -> 명소 클릭\r\n4. {명소} 1번째 장소는? 단어를 입력 하면 완료!\r\n\r\n\r\n[주의사항] \r\n이미 참여한 이력이 있다면 리워드가 지급되지 않을 수 있습니다. \r\nWIFI가 아닌 환경에서는 데이터 이용료가 발생할 수 있습니다.",
+          "totalquantity": 14000,
+          "quantity": 2000,
+          "enddate": "20240724",
+          "targetcarrier": "",
+          "targetgender": 0,
+          "targetagemin": 0,
+          "targetagemax": 0,
+          "targetpkg": "",
+          "detargetpkg": "",
+          "ad_event_limit": 9999,
+          "iconurl": "https://webapp.superap.io/res/quiz_icon.png",
+          "ctv": [
+            {
+              "type": 1,
+              "url": "https://webapp.superap.io/res/quiz_1200-600_1.png"
+            },
+            {
+              "type": 2,
+              "url": "https://webapp.superap.io/res/quiz_720-780_1.png"
+            }
+          ]
+        },
+        {
+            "campid": 405080,
+            "name": "목포 맛집 목포관광오리탕 오리탕 저장하기",
+            "bm": 1,
+            "sub_type": 1,
+            "detail_type": "place_save_home",
+            "price": 19,
+            "price_dollar": 0.013,
+            "rewarddesc": "플레이스 저장하기",
+            "joindesc": "[참여방법]\r\n1. 미션 페이지 클릭 -> 플레이스 더보기 클릭 후\r\n2. 홈 메뉴에서 플레이스 저장 하고 저장된 화면 캡쳐하기 \r\n3. 돌아와서 캡쳐화면 업로드 하면 완료! \r\n\r\n\r\n\r\n\r\n[주의사항]\r\n이미 참여한 이력이 있다면 리워드가 지급되지 않을 수 있습니다.\r\nWIFI가 아닌 환경에서는 데이터 이용료가 발생할 수 있습니다.",
+            "totalquantity": 6000,
+            "quantity": 200,
+            "enddate": "20240728",
+            "targetcarrier": "",
+            "targetgender": 0,
+            "targetagemin": 0,
+            "targetagemax": 0,
+            "targetpkg": "",
+            "detargetpkg": "",
+            "ad_event_limit": 1,
+            "iconurl": "https://webapp.superap.io/res/place_icon.png",
+            "ctv": [
+              {
+                "type": 1,
+                "url": "https://webapp.superap.io/res/place_1200-600_2.png"
+              },
+              {
+                "type": 2,
+                "url": "https://webapp.superap.io/res/place_720-780_2.png"
+              }
+            ]
+        }
+    ]
+}
+```
+
 ---
 # 2.캠페인 참여 요청 API
 
