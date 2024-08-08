@@ -68,28 +68,29 @@ camp -> ctv 세부 항목
 
 camp -> detail_type 세부 항목
 
-| detail_type                  | 설명                |
-|------------------------------|-------------------|
-| place_save_default           | 기본 플레이스 저장하기      |
-| place_save_share             | 플레이스 URL 공유하기     |
-| place_save_click             | 업체 클릭 후 저장        |
-| place_save_home              | 플레이스 홈 저장         |
-| place_save_keep              | keep 공유           |
-| place_save_noti              | 알림받기              |
-| cpc_detail_ceo_name          | 대표자명 맞추기          |
+| detail_type                  | 설명     |
+|------------------------------|--------|
+| place_save_default           | 기본 플레이스 저장하기 |
+| place_save_share             | 플레이스 URL 공유하기 |
+| place_save_click             | 업체 클릭 후 저장 |
+| place_save_home              | 플레이스 홈 저장 |
+| place_save_keep              | keep 공유 |
+| place_save_noti              | 알림받기   |
+| place_save_tab              | 검색 후 정답 입력 |
+| cpc_detail_ceo_name          | 대표자명 맞추기 |
 | cpc_detail_click_tag         | 상품 클릭 후 태그 단어 맞추기 |
-| cpc_detail_click_ceo_name    | 상품 클릭 후 대표자명 맞추기  |
-| cpc_detail_place             | 플레이스 퀴즈           |
-| cpc_detail_place_quiz        | 서치 플레이스 퀴즈        |
-| pick_shop_default            | 기본 상품찜            |
-| pick_shop_click              | 상품 클릭 후 상품찜       |
-| receive_notification_default | 기본 알림받기           |
-| receive_notification_click   | 상품 클릭 후 알림받기      |
-| video_length_default         | 시청하기              |
-| youtube_subs_default         | 구독하기              |
-| short_like_default           | 쇼츠 좋아요            |
-| youtube_like_default         | 영상 좋아요            |
-| youtube_like_subs_default    | 영상 좋아요 & 채널 구독    |
+| cpc_detail_click_ceo_name    | 상품 클릭 후 대표자명 맞추기 |
+| cpc_detail_place             | 플레이스 퀴즈 |
+| cpc_detail_place_quiz        | 서치 플레이스 퀴즈 |
+| pick_shop_default            | 기본 상품찜 |
+| pick_shop_click              | 상품 클릭 후 상품찜 |
+| receive_notification_default | 기본 알림받기 |
+| receive_notification_click   | 상품 클릭 후 알림받기 |
+| video_length_default         | 시청하기   |
+| youtube_subs_default         | 구독하기   |
+| short_like_default           | 쇼츠 좋아요 |
+| youtube_like_default         | 영상 좋아요 |
+| youtube_like_subs_default    | 영상 좋아요 & 채널 구독 |
 
 
 #### 응답 예시
