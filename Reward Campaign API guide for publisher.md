@@ -32,6 +32,7 @@
 | cnt                 | int    | 캠페인 수                                  |                                                            |
 | camp                | array  | 캠페인 리스트                                |                                                            |
 | camp.campid         | int    | 캠페인 식별값                                |                                                            |
+| camp.os             | string | 모바일 OS                                 | android, ios, WEB (WEB은 모든 OS 호환)                          |
 | camp.name           | string | 캠페인명                                   |                                                            |
 | camp.bm             | int    | 캠페인 유형                                 | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: 기타                         |
 | camp.sub_type       | int    | 캠페인 하위 유형(bm 값이 1일 경우)                 | 0: 기본, 1: 플레이스 저장하기, 2:퀴즈맞추기, 3:스토어상품찜, 4:스토어 알림받기, 5: 유튜브 |
