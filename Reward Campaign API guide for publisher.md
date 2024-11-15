@@ -9,7 +9,7 @@
 - 5분 주기로 업데이트 받는 것을 추천드립니다
 - method : GET
 - production API url : https://api.adbc.io/api/v3/reward/campaigns
-- test API url : http://dev.qtbit.co.kr:8031/api/v3/reward/campaigns
+- test API url : https://dev.qtbit.co.kr:8431/api/v3/reward/campaigns
 - parameter : token (필수), p (필수)
 
 
@@ -180,7 +180,7 @@ camp -> detail_type 세부 항목
 ### 요청 
 - method : GET
 - production API url : https://adbc.io/reward/v3/join
-- test API url : http://dev.qtbit.co.kr:8032/reward/v3/join
+- test API url : https://dev.qtbit.co.kr:8432/reward/v3/join
 
 #### 참고 : 방화벽 등 보안 설정이 되어 있는 경우 아래 주소로 호출해주세요
 - <code>URL : https://click.adbc.io/reward/v3/join</code>
@@ -222,7 +222,7 @@ camp -> detail_type 세부 항목
 
 - method : GET
 - production API url : https://adbc.io/reward/v3/inst
-- test API url : http://dev.qtbit.co.kr:8032/reward/v3/inst
+- test API url : https://dev.qtbit.co.kr:8432/reward/v3/inst
 - parameter :
 
 | 항목     | 형태     | 내용                                            | 필수 | 비고                   |
