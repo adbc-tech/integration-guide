@@ -286,10 +286,10 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 
 ### 요청
 
-- method : GET
+- method : POST
+- content-type : application/json
 - production API url : https://sns.adbc.io/check-answer
 - test API url : https://dev.qtbit.co.kr:8430/check-answer
-- parameter :
 
 | 항목       | 형태     | 내용                        | 필수 | 비고 |
 |----------|--------|---------------------------|----|----|
