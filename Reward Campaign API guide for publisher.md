@@ -88,6 +88,8 @@ camp -> detail_type 세부 항목
 | cpc_detail_place_quiz        | 서치 플레이스 퀴즈        |
 | pick_shop_default            | 기본 상품찜            |
 | pick_shop_click              | 상품 클릭 후 상품찜       |
+| pick_shop_musinsa_like       | 무신사 상품 찜하기        |
+| pick_shop_kakao_like         | 카카톡 선물하기 찜하기      |
 | receive_notification_default | 기본 알림받기           |
 | receive_notification_click   | 상품 클릭 후 알림받기      |
 | video_length_default         | 시청하기              |
