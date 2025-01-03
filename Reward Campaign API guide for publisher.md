@@ -80,6 +80,7 @@ camp -> detail_type 세부 항목
 | place_save_keep              | keep 공유           |
 | place_save_noti              | 알림받기              |
 | place_save_tab               | 검색 후 정답 입력        |
+| place_save_search            | 서치 커스텀 미션         |
 | cpc_detail_ceo_name          | 대표자명 맞추기          |
 | cpc_detail_click_tag         | 상품 클릭 후 태그 단어 맞추기 |
 | cpc_detail_click_ceo_name    | 상품 클릭 후 대표자명 맞추기  |
