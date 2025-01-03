@@ -79,7 +79,7 @@ camp -> detail_type 세부 항목
 | place_save_home              | 플레이스 홈 저장         |
 | place_save_keep              | keep 공유           |
 | place_save_noti              | 알림받기              |
-| place_save_tab              | 검색 후 정답 입력        |
+| place_save_tab               | 검색 후 정답 입력        |
 | cpc_detail_ceo_name          | 대표자명 맞추기          |
 | cpc_detail_click_tag         | 상품 클릭 후 태그 단어 맞추기 |
 | cpc_detail_click_ceo_name    | 상품 클릭 후 대표자명 맞추기  |
@@ -94,7 +94,7 @@ camp -> detail_type 세부 항목
 | short_like_default           | 쇼츠 좋아요            |
 | youtube_like_default         | 영상 좋아요            |
 | youtube_like_subs_default    | 영상 좋아요 & 채널 구독    |
-| sns_instagram_follow    | 인스타그램 팔로우         |
+| sns_instagram_follow         | 인스타그램 팔로우         |
 
 
 #### 응답 예시
@@ -189,29 +189,31 @@ camp -> detail_type 세부 항목
 - <code>허용할 Port : 443</code> 
 
 
-| 항목       | 형태     | 내용                                | 필수 | 비고                                              |
-|----------|--------|-----------------------------------|----|-------------------------------------------------|
-| token    | string | 매체사 식별키                           | O  |
-| cbparam  | string | 매체사에서 정의한 파라미터                    |    | 해당 파라미터에 값을 넣어 보내주시면 포스트백을 통해 다시 전달받을 수 있는 값입니다 |
-| aff_id   | string | 매체사의 하위 매체 아이디 (최대 길이: 100)       |    |                                                 |
-| userid   | string | 참여 유저 식별값 (최대 길이: 100)            | O  |
-| campid   | int    | 캠페인 식별값                           | O  |
-| osver    | string | 참여 단말기 OS 버전 정보                   |    |
-| ip       | string | 참여 단말기 IP 정보                      | O  |
-| adid     | string | AOS = adid, iOS = idfa            | O  |
-| devmodel | string | 참여 단말기 모델 정보                      |    | 권장                                              |
-| devbrand | string | 참여 단말기 제조자 정보                     |    | 권장                                              |
-| mnetwork | int    | 참여 단말기 네트워크 정보                    |    | 1: 3G, 2: 4G, 3: 5G, 4: WIFI                    |
-| carrier  | int    | 참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수) |    | 권장, 1: KT, 2: LGU+, 3: SKT                      |
-| ga       | string | 참여 단말기의 구글 계정을 sha1 암호화           |    | 권장                                              |
-| age      | int    | 유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)       |    |                                                 |
-| gender   | int    | 참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)    |    | 0: 모름, 1: 남자, 2: 여자                             |
+| 항목          | 형태     | 내용                                | 필수 | 비고                                              |
+|-------------|--------|-----------------------------------|----|-------------------------------------------------|
+| token       | string | 매체사 식별키                           | O  |
+| cbparam     | string | 매체사에서 정의한 파라미터                    |    | 해당 파라미터에 값을 넣어 보내주시면 포스트백을 통해 다시 전달받을 수 있는 값입니다 |
+| aff_id      | string | 매체사의 하위 매체 아이디 (최대 길이: 100)       |    |                                                 |
+| userid      | string | 참여 유저 식별값 (최대 길이: 100)            | O  |
+| campid      | int    | 캠페인 식별값                           | O  |
+| osver       | string | 참여 단말기 OS 버전 정보                   |    |
+| ip          | string | 참여 단말기 IP 정보                      | O  |
+| adid        | string | AOS = adid, iOS = idfa            | O  |
+| devmodel    | string | 참여 단말기 모델 정보                      |    | 권장                                              |
+| devbrand    | string | 참여 단말기 제조자 정보                     |    | 권장                                              |
+| mnetwork    | int    | 참여 단말기 네트워크 정보                    |    | 1: 3G, 2: 4G, 3: 5G, 4: WIFI                    |
+| carrier     | int    | 참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수) |    | 권장, 1: KT, 2: LGU+, 3: SKT                      |
+| ga          | string | 참여 단말기의 구글 계정을 sha1 암호화           |    | 권장                                              |
+| age         | int    | 유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)       |    |                                                 |
+| gender      | int    | 참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)    |    | 0: 모름, 1: 남자, 2: 여자                             |
+| self_bridge | int    | 브릿지 페이지 구성 여부                     |    | 0: ADBC 브릿지 페이지 사용(기본), 1: 자체 브릿지 페이지 사용        |
 
 ### 응답
-| 항목     | 형태     | 내용         |
-|--------|--------|------------|
-| result | int    | 처리 결과 코드   |
-| lurl   | string | 캠페인 랜딩 URL |
+| 항목       | 형태     | 내용                                   |
+|----------|--------|--------------------------------------|
+| result   | int    | 처리 결과 코드                             |
+| lurl     | string | 캠페인 랜딩 URL                           |
+| click_id | string | (자체 브릿지 페이지 사용시) '정답 확인 API' 요청시 필수값 |
 
 ---
 # 3.CPI 설치 확인 API
@@ -273,6 +275,33 @@ camp -> detail_type 세부 항목
 https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid={campid}&price={price}
 
 
+---
+# 5.정답 확인 API
+
+- 해당 API는 자체 브릿지 페이지를 사용하는 경우에만 사용합니다
+- 해당 API의 응답 중 isMatch가 true인 경우에만 리워드 적립을 진행해주시면 됩니다
+
+### 요청
+
+- method : GET
+- production API url : https://sns.adbc.io/check-answer
+- test API url : https://dev.qtbit.co.kr:8430/check-answer
+- parameter :
+
+| 항목       | 형태     | 내용                        | 필수 | 비고 |
+|----------|--------|---------------------------|----|----|
+| token    | string | 매체사 식별키                   | O  |    |
+| campid   | int    | 캠페인 식별값                   | O  |    |
+| text     | string | 사용자 정답 입력값                | O  |    |
+| adid     | string | AOS = adid, iOS = idfa    | O  |
+| click_id | string | '참여API'의 응답으로 받은 click_id | O  |    |
+
+### 응답
+
+| 항목     | 형태     | 내용                            |
+|--------|--------|-------------------------------|
+| result | int    | 처리 결과 코드                      |
+| tid    | string | 설치 확인 성공일 경우 전송되는 유니크한 구분 데이터 |
 
 ---
 ## 공통
