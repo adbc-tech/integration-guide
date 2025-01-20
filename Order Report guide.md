@@ -1,8 +1,8 @@
-# Coupang Report integration guide
+# Order Report integration guide
 
 ### Getting Started
 
-쿠팡 실적에 대한 리포트를 제공하는 API 가이드입니다. 
+구매/취소 실적에 대한 리포트를 제공하는 API 가이드입니다. 
 
 # 기본 정보
 
@@ -11,7 +11,7 @@
 
 # 1.리포트 API 연동
 
-- url : https://api.adbc.io/api/report?token={token}&from={from}&to={to}
+- url : https://api.adbc.io/api/report/order?token={token}&from={from}&to={to}
 - method : GET
 - content-type : application/json;utf-8
 - token값은 ADBC support팀에게 요청하여 발급 가능합니다  
