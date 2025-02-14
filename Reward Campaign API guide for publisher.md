@@ -9,7 +9,7 @@
 - 5분 주기로 업데이트 받는 것을 추천드립니다
 - method : GET
 - production API url : https://api.adbc.io/api/v3/reward/campaigns
-- test API url : https://dev.qtbit.co.kr:8431/api/v3/reward/campaigns
+- test API url : https://dev.qtbit.co.kr:8031/api/v3/reward/campaigns
 - parameter : token (필수), p (필수)
 
 
@@ -289,7 +289,7 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 - method : POST
 - content-type : application/json
 - production API url : https://sns.adbc.io/check-answer
-- test API url : https://dev.qtbit.co.kr:8430/check-answer
+- test API url : http://dev.qtbit.co.kr:8430/check-answer
 
 | 항목       | 형태     | 내용                        | 필수 | 비고 |
 |----------|--------|---------------------------|----|----|
