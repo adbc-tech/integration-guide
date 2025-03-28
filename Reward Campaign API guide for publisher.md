@@ -27,47 +27,47 @@
 
 
 
-| 항목                      | 형태     | 설명                                     | 비고                                                                 |
-|-------------------------|--------|----------------------------------------|--------------------------------------------------------------------|
-| result                  | int    | 응답 결과 값                                | 200인 경우에만 정상, '결과 코드' 참고                                           |
-| cnt                     | int    | 캠페인 수                                  |                                                                    |
-| camp                    | array  | 캠페인 리스트                                |                                                                    |
-| camp.campid             | int    | 캠페인 식별값                                |                                                                    |
-| camp.os                 | string | 모바일 OS                                 | android, ios, WEB (WEB은 모든 OS 호환)                                  |
-| camp.name               | string | 캠페인명                                   |                                                                    |
-| camp.bm                 | int    | 캠페인 유형                                 | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: 기타                                 |
-| camp.sub_type           | int    | 캠페인 하위 유형(bm 값이 1일 경우)                 | 0: 기본, 1: 플레이스 저장하기, 2:퀴즈맞추기, 3:스토어상품찜, 4:스토어 알림받기, 5: 유튜브, 6: SNS |
-| camp.detail_type        | string | 캠페인 하위 유형(bm 값이 1일 경우)                 | *아래 표 참고                                                           |
-| camp.package            | string | 패키지네임 또는 url scheme                    | android: package name, iOS: custom url                             |
-| camp.price              | int    | 캠페인 집행 단가 (=매체비)                       | 100                                                                |
-| camp.price_dollar       | float  | 캠페인 집행 단가 (=매체비)                       | 0.01                                                               |
-| camp.rewarddesc         | string | 캠페인 적립 조건 안내                           | ex) 앱 설치 후 회원가입 완료                                                 |
-| camp.joindesc           | string | 캠페인 참여 방법 안내                           |                                                                    |
-| camp.totalquantity      | int    | 해당 캠페인의 참여 가능한 총 수량                    | 0: 무제한                                                             |
-| camp.quantity           | int    | 해당 캠페인의 일별 참여 가능 수량(=매체사에 할당된 데일리 캡)   | 0: 무제한                                                             |
-| camp.enddate            | string | 캠페인 종료일                                | 1) 값이 있는 경우: YYYYMMDD 2) 값이 없는 경우: 별도 종료일 없음                       |
-| ~~camp.ad_event_limit~~ | int    | ~~사용자당 참여 가능 횟수~~                      | deprecated                                                         |
-| camp.day_event_limit    | int    | 일일 사용자당 참여 가능 횟수                       | 0: 단 한번만 참여 가능, 1: 하루 한번 참여 가능, N: 하루 N번 참여 가능                     |
-| camp.targetcarrier      | string | 통신사 타겟팅                                | 공백: 타겟 없음, 1: KT, 2: LGU+, 3: SKT                                  |
-| camp.targetgender       | int    | 성별 타겟팅                                 | 0: 타겟 없음, 1: 남자, 2: 여자                                             |
-| camp.targetagemin       | int    | 최소 연령 타겟팅                              | 0: 타겟 없음                                                           |
-| camp.targetagemax       | int    | 최대 연령 타겟팅                              | 0: 타겟 없음                                                           |
-| camp.targetpkg          | string | 앱 패키지네임 타겟팅. AOS 캠페인일 경우에만 내려옵니다       |                                                                    |
-| camp.detargetpkg        | string | 앱 패키지네임 디타겟팅. AOS 캠페인일 경우에만 내려옵니다      |                                                                    |
-| camp.iconurl            | string | 캠페인의 아이콘 이미지 url                       |                                                                    |
-| camp.ctv                | array  | 아이콘 이미지를 제외한 가로형, 세로형 소재 정보를 포함하고 있습니다 | 세부 항목 참고                                                           |
-| camp.cpsprice(*)        | int    | 상품의 할인 전 가격                            | bm=4인, cps 캠페인 전용                                                  |
-| camp.cpsdcprice(*)      | int    | 상품의 실제 구매 가격                           | bm=4인, cps 캠페인 전용                                                  |
+| 항목                      | 형태            | 설명                                     | 비고                                                                 |
+|-------------------------|---------------|----------------------------------------|--------------------------------------------------------------------|
+| result                  | int           | 응답 결과 값                                | 200인 경우에만 정상, '결과 코드' 참고                                           |
+| cnt                     | int           | 캠페인 수                                  |                                                                    |
+| camp                    | array         | 캠페인 리스트                                |                                                                    |
+| camp.campid             | int           | 캠페인 식별값                                |                                                                    |
+| camp.os                 | string(7)     | 모바일 OS                                 | android, ios, WEB (WEB은 모든 OS 호환)                                  |
+| camp.name               | string(255)   | 캠페인명                                   |                                                                    |
+| camp.bm                 | int           | 캠페인 유형                                 | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: 기타                                 |
+| camp.sub_type           | int           | 캠페인 하위 유형(bm 값이 1일 경우)                 | 0: 기본, 1: 플레이스 저장하기, 2:퀴즈맞추기, 3:스토어상품찜, 4:스토어 알림받기, 5: 유튜브, 6: SNS |
+| camp.detail_type        | string(50)    | 캠페인 하위 유형(bm 값이 1일 경우)                 | *아래 표 참고                                                           |
+| camp.package            | string(100)   | 패키지네임 또는 url scheme                    | android: package name, iOS: custom url                             |
+| camp.price              | int           | 캠페인 집행 단가 (=매체비)                       | 100                                                                |
+| camp.price_dollar       | float(11,3)   | 캠페인 집행 단가 (=매체비)                       | 0.01                                                               |
+| camp.rewarddesc         | string(50)    | 캠페인 적립 조건 안내                           | ex) 앱 설치 후 회원가입 완료                                                 |
+| camp.joindesc           | string(65535) | 캠페인 참여 방법 안내                           |                                                                    |
+| camp.totalquantity      | int           | 해당 캠페인의 참여 가능한 총 수량                    | 0: 무제한                                                             |
+| camp.quantity           | int           | 해당 캠페인의 일별 참여 가능 수량(=매체사에 할당된 데일리 캡)   | 0: 무제한                                                             |
+| camp.enddate            | string(8)     | 캠페인 종료일                                | 1) 값이 있는 경우: YYYYMMDD 2) 값이 없는 경우: 별도 종료일 없음                       |
+| ~~camp.ad_event_limit~~ | int           | ~~사용자당 참여 가능 횟수~~                      | deprecated                                                         |
+| camp.day_event_limit    | int           | 일일 사용자당 참여 가능 횟수                       | 0: 단 한번만 참여 가능, 1: 하루 한번 참여 가능, N: 하루 N번 참여 가능                     |
+| camp.targetcarrier      | string(1)     | 통신사 타겟팅                                | 공백: 타겟 없음, 1: KT, 2: LGU+, 3: SKT                                  |
+| camp.targetgender       | int           | 성별 타겟팅                                 | 0: 타겟 없음, 1: 남자, 2: 여자                                             |
+| camp.targetagemin       | int           | 최소 연령 타겟팅                              | 0: 타겟 없음                                                           |
+| camp.targetagemax       | int           | 최대 연령 타겟팅                              | 0: 타겟 없음                                                           |
+| camp.targetpkg          | string(100)   | 앱 패키지네임 타겟팅. AOS 캠페인일 경우에만 내려옵니다       |                                                                    |
+| camp.detargetpkg        | string(100)   | 앱 패키지네임 디타겟팅. AOS 캠페인일 경우에만 내려옵니다      |                                                                    |
+| camp.iconurl            | string(255)   | 캠페인의 아이콘 이미지 url                       |                                                                    |
+| camp.ctv                | array         | 아이콘 이미지를 제외한 가로형, 세로형 소재 정보를 포함하고 있습니다 | 세부 항목 참고                                                           |
+| camp.cpsprice(*)        | int           | 상품의 할인 전 가격                            | bm=4인, cps 캠페인 전용                                                  |
+| camp.cpsdcprice(*)      | int           | 상품의 실제 구매 가격                           | bm=4인, cps 캠페인 전용                                                  |
 
 (*) : 해당 사항이 없을 경우, 응답 항목이 전달되지 않습니다.
 
 camp -> ctv 세부 항목
 
-| 항목   | 형태     | 설명                            |
-|------|--------|-------------------------------|
-| type | int    | 1:가로형 소재, 1200*600, 2:1 ratio |
-| type | int    | 2:세로형 소재, 720*780             |
-| url  | string | 소재 url                        |
+| 항목   | 형태          | 설명                            |
+|------|-------------|-------------------------------|
+| type | int         | 1:가로형 소재, 1200*600, 2:1 ratio |
+| type | int         | 2:세로형 소재, 720*780             |
+| url  | string(255) | 소재 url                        |
 
 camp -> detail_type 세부 항목
 
@@ -192,24 +192,23 @@ camp -> detail_type 세부 항목
 - <code>허용할 Port : 443</code> 
 
 
-| 항목          | 형태     | 내용                                | 필수 | 비고                                              |
-|-------------|--------|-----------------------------------|----|-------------------------------------------------|
-| token       | string | 매체사 식별키                           | O  |
-| cbparam     | string | 매체사에서 정의한 파라미터                    |    | 해당 파라미터에 값을 넣어 보내주시면 포스트백을 통해 다시 전달받을 수 있는 값입니다 |
-| aff_id      | string | 매체사의 하위 매체 아이디 (최대 길이: 100)       |    |                                                 |
-| userid      | string | 참여 유저 식별값 (최대 길이: 100)            | O  |
-| campid      | int    | 캠페인 식별값                           | O  |
-| osver       | string | 참여 단말기 OS 버전 정보                   |    |
-| ip          | string | 참여 단말기 IP 정보                      | O  |
-| adid        | string | AOS = adid, iOS = idfa            | O  |
-| devmodel    | string | 참여 단말기 모델 정보                      |    | 권장                                              |
-| devbrand    | string | 참여 단말기 제조자 정보                     |    | 권장                                              |
-| mnetwork    | int    | 참여 단말기 네트워크 정보                    |    | 1: 3G, 2: 4G, 3: 5G, 4: WIFI                    |
-| carrier     | int    | 참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수) |    | 권장, 1: KT, 2: LGU+, 3: SKT                      |
-| ga          | string | 참여 단말기의 구글 계정을 sha1 암호화           |    | 권장                                              |
-| age         | int    | 유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)       |    |                                                 |
-| gender      | int    | 참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)    |    | 0: 모름, 1: 남자, 2: 여자                             |
-| self_bridge | int    | 브릿지 페이지 구성 여부                     |    | 0: ADBC 브릿지 페이지 사용(기본), 1: 자체 브릿지 페이지 사용        |
+| 항목          | 형태          | 내용                                | 필수 | 비고                                              |
+|-------------|-------------|-----------------------------------|----|-------------------------------------------------|
+| token       | string(40)  | 매체사 식별키                           | O  |
+| cbparam     | string(255) | 매체사에서 정의한 파라미터                    |    | 해당 파라미터에 값을 넣어 보내주시면 포스트백을 통해 다시 전달받을 수 있는 값입니다 |
+| aff_id      | string(100) | 매체사의 하위 매체 아이디                    |    |                                                 |
+| userid      | string(100) | 참여 유저 식별값                         | O  |
+| campid      | int         | 캠페인 식별값                           | O  |
+| osver       | string(20)  | 참여 단말기 OS 버전 정보                   |    |
+| ip          | string(20)  | 참여 단말기 IP 정보                      | O  |
+| adid        | string(100) | 안드로이드일 경우 adid, iOS일 경우 idfa      | O  |
+| devmodel    | string(20)  | 참여 단말기 모델 정보                      |    |                                                 |
+| devbrand    | string(20)  | 참여 단말기 제조자 정보                     |    |                                                 |
+| mnetwork    | int         | 참여 단말기 네트워크 정보                    |    | 1: 3G, 2: 4G, 3: 5G, 4: WIFI                    |
+| carrier     | int         | 참여 단말기 통신사 정보(통신사 타게팅 캠페인일 경우 필수) |    | 1: KT, 2: LGU+, 3: SKT                          |
+| age         | int         | 유저 연령 정보(연령 타겟팅 캠페인일 경우 필수)       |    |                                                 |
+| gender      | int         | 참여 유저 성별 정보(성별 타겟팅 캠페인일 경우 필수)    |    | 0: 모름, 1: 남자, 2: 여자                             |
+| self_bridge | int         | 브릿지 페이지 구성 여부                     |    | 0: ADBC 브릿지 페이지 사용(기본), 1: 자체 브릿지 페이지 사용        |
 
 ### 응답
 | 항목       | 형태     | 내용                                   |
@@ -231,22 +230,20 @@ camp -> detail_type 세부 항목
 - test API url : https://dev.qtbit.co.kr:8432/reward/v3/inst
 - parameter :
 
-| 항목     | 형태     | 내용                                            | 필수 | 비고                   |
-|--------|--------|-----------------------------------------------|----|----------------------|
-| token  | string | 매체사 식별키                                       | O  |                      |
-| campid | int    | 캠페인 식별값                                       | O  |                      |
-| userid | string | 참여 유저 식별값 (최대 길이: 100)                        | O  |                      |
-| adid   | string | AOS = adid, iOS = idfa                        | O  |
-| wvid   | string | Widevine DRM용 ID값 - AOS인 경우                   |    | 권장                   |
-| wvslv  | string | Widevine security level(L1/l3) - AOS인 경우      |    | 권장                   |
-| ip     | string | 참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가) |    | 권장                   |
+| 항목     | 형태          | 내용                                            | 필수 | 비고 |
+|--------|-------------|-----------------------------------------------|----|----|
+| token  | string(40)  | 매체사 식별키                                       | O  |    |
+| campid | int         | 캠페인 식별값                                       | O  |    |
+| userid | string(100) | 참여 유저 식별값                                     | O  |    |
+| adid   | string(100) | 안드로이드일 경우 adid, iOS일 경우 idfa                  | O  |
+| ip     | string(20)  | 참여 단말기 IP 정보(공인 IP만 인정되고 서버IP 또는 사설IP는 사용 불가) |    | 권장 |
 
 ### 응답
 
-|항목|형태|내용|
-|------|------|------|
-|result|int|처리 결과 코드|
-|tid|string|설치 확인 성공일 경우 전송되는 유니크한 구분 데이터|
+| 항목     | 형태         | 내용                            |
+|--------|------------|-------------------------------|
+| result | int        | 처리 결과 코드                      |
+| tid    | string(38) | 설치 확인 성공일 경우 전송되는 유니크한 구분 데이터 |
 
 ---
 # 4.실적 전송
@@ -262,15 +259,15 @@ camp -> detail_type 세부 항목
 
 ### 매크로
 
-| 항목           | 형태     | 설명                           | 비고       |
-|--------------|--------|------------------------------|----------|
-| cbparam      | string | 캠페인 참여시 보냈던 cbparam값         |          |
-| tid          | string | 실적에 대한 유니크값 (transaction ID) |          |
-| subpid       | string | 하위 매체 구분값                    | optional |
-| userid       | string | 참여 유저 식별값                    |          |
-| campid       | int    | 캠페인 식별값                      |          |
-| price        | int    | 수익금                          |          |
-| price_dollar | float  | 수익금                          |          |
+| 항목           | 형태          | 설명                           | 비고       |
+|--------------|-------------|------------------------------|----------|
+| cbparam      | string(255) | 캠페인 참여시 보냈던 cbparam값         |          |
+| tid          | string(38)  | 실적에 대한 유니크값 (transaction ID) |          |
+| subpid       | string(100) | 하위 매체 구분값                    | optional |
+| userid       | string(100) | 참여 유저 식별값                    |          |
+| campid       | int         | 캠페인 식별값                      |          |
+| price        | float(11,1) | 수익금                          |          |
+| price_dollar | float(11,3) | 달러 수익금                       |          |
 
 
 ### 예시
@@ -291,20 +288,20 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 - production API url : https://sns.adbc.io/check-answer
 - test API url : http://dev.qtbit.co.kr:8430/check-answer
 
-| 항목       | 형태     | 내용                        | 필수 | 비고 |
-|----------|--------|---------------------------|----|----|
-| token    | string | 매체사 식별키                   | O  |    |
-| campid   | int    | 캠페인 식별값                   | O  |    |
-| text     | string | 사용자 정답 입력값                | O  |    |
-| adid     | string | AOS = adid, iOS = idfa    | O  |
-| click_id | string | '참여API'의 응답으로 받은 click_id | O  |    |
+| 항목       | 형태             | 내용                        | 필수 | 비고 |
+|----------|----------------|---------------------------|----|----|
+| token    | string(40)     | 매체사 식별키                   | O  |    |
+| campid   | int            | 캠페인 식별값                   | O  |    |
+| text     | string(65,535) | 사용자 정답 입력값                | O  |    |
+| adid     | string(40)     | AOS일 경우adid, iOS일 경우 idfa | O  |
+| click_id | string(38)     | '참여API'의 응답으로 받은 click_id | O  |    |
 
 ### 응답
 
-| 항목     | 형태     | 내용                            |
-|--------|--------|-------------------------------|
-| result | int    | 처리 결과 코드                      |
-| tid    | string | 설치 확인 성공일 경우 전송되는 유니크한 구분 데이터 |
+| 항목      | 형태      | 내용    |
+|---------|---------|-------|
+| isMatch | boolean | 매칭 여부 |
+| status  | int     | 응답코드  |
 
 ---
 ## 공통
