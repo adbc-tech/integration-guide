@@ -15,6 +15,7 @@
 |-----------|-------------|----------------------|
 | token     | API_KEY     |                      |
 | p         | platform    | Android : 1, iOS : 2 |
+| category  | category    |    | Insurance : 01, Finance : 02, Car Insurance : 03, Card : 04, ETC : 99 |
 - e.g) : https://api.adbc.io/api/v3/reward/campaigns?token={token}
   
 
