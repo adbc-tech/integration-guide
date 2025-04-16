@@ -313,6 +313,7 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 | 항목  | 내용           |
 |-----|--------------|
 | 200 | 성공           |
+| 300 | 검토중으로 적립 대기  |
 | 400 | 잘못된 요청       |
 | 401 | 등록되지 않은 매체   |
 | 402 | 유저 정보 오류     |
