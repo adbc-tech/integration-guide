@@ -25,16 +25,17 @@
 
 - response :
 
-| 변수명 | 설명       | 예시                                   | 비고  |
-| ------ |----------|--------------------------------------| ------ |
-| result | 응답 결과 코드 | 200                                  | 에러 코드:501, 502, 503, 504 |
-| message | 에러 사유    | token is wrong. Require valid token. | 에러 코드일 경우에만 기재 |
-| total_items | 총 실적 수   | 10                                   |  |
-| items.report_date | 날짜       | 20250101                             |  |
-| items.purchase_count | 총 구매 횟수  | 6                                    |  |
+| 변수명                   | 설명       | 예시                                   | 비고  |
+|-----------------------|----------|--------------------------------------| ------ |
+| result                | 응답 결과 코드 | 200                                  | 에러 코드:501, 502, 503, 504 |
+| message               | 에러 사유    | token is wrong. Require valid token. | 에러 코드일 경우에만 기재 |
+| total_items           | 총 실적 수   | 10                                   |  |
+| items.report_date     | 날짜       | 20250101                             |  |
+| items.purchase_count  | 총 구매 횟수  | 6                                    |  |
 | items.purchase_amount | 총 구매 금액  | 456700                               |  |
-| items.cancel_count | 총 취소 횟수  | 4                                    |  |
-| items.cancel_amount | 총 취소 금액  | 651210                               |  |
+| items.cancel_count    | 총 취소 횟수  | 4                                    |  |
+| items.cancel_amount   | 총 취소 금액  | 651210                               |  |
+| items.click_count     | 총 클릭 횟수  | 13                                   |  |
 
 
 ## Authors
