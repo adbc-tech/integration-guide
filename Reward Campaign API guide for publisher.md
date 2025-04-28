@@ -99,6 +99,10 @@ camp -> detail_type 세부 항목
 | youtube_like_default         | 영상 좋아요            |
 | youtube_like_subs_default    | 영상 좋아요 & 채널 구독    |
 | sns_instagram_follow         | 인스타그램 팔로우         |
+| sns_dg_follow                | 당근 단골 맺기          |
+| sns_band_regi                | 밴드 회원가입           |
+| sns_wdz_noti                 | 와디즈 알림받기          |
+| sns_cafe_regi                | 카페 회원가입           |
 
 
 #### 응답 예시
