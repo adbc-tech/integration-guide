@@ -39,6 +39,7 @@
 | camp.bm                 | int           | 캠페인 유형                                 | 1: CPA, 2:CPE, 3:CPI, 4:CPS, 0: 기타                                 |
 | camp.sub_type           | int           | 캠페인 하위 유형(bm 값이 1일 경우)                 | 0: 기본, 1: 플레이스 저장하기, 2:퀴즈맞추기, 3:스토어상품찜, 4:스토어 알림받기, 5: 유튜브, 6: SNS |
 | camp.detail_type        | string(50)    | 캠페인 하위 유형(bm 값이 1일 경우)                 | *아래 표 참고                                                           |
+| camp.ad_category        | string(10)    | 캠페인의 카테고리                              | *아래 표 참고                                                           |
 | camp.package            | string(100)   | 패키지네임 또는 url scheme                    | android: package name, iOS: custom url                             |
 | camp.price              | int           | 캠페인 집행 단가 (=매체비)                       | 100                                                                |
 | camp.price_dollar       | float(11,3)   | 캠페인 집행 단가 (=매체비)                       | 0.01                                                               |
@@ -61,6 +62,16 @@
 | camp.cpsdcprice(*)      | int           | 상품의 실제 구매 가격                           | bm=4인, cps 캠페인 전용                                                  |
 
 (*) : 해당 사항이 없을 경우, 응답 항목이 전달되지 않습니다.
+
+camp -> ad_category 세부 항목
+
+| 카테고리 값 | 설명     |
+|--------|--------|
+| 01     | 보험     |
+| 02     | 금융     |
+| 03     | 자동차 보험 |
+| 04     | 카드     |
+| 99     | 기타     |
 
 camp -> ctv 세부 항목
 
