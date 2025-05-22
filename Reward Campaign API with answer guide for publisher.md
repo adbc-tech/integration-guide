@@ -294,6 +294,34 @@ https://postback.com?clk_id={cbparam}&tid={tid}&aff_id={subpid}&uid={userid}&cid
 
 
 ---
+# 5.정답 확인 API
+
+- 해당 API는 자체 브릿지 페이지를 사용하는 경우에만 사용합니다
+- 해당 API의 응답 중 isMatch가 true인 경우에만 리워드 적립을 진행해주시면 됩니다
+
+### 요청
+
+- method : POST
+- content-type : application/json
+- production API url : https://sns.adbc.io/check-answer
+- test API url : http://dev.qtbit.co.kr:8430/check-answer
+
+| 항목       | 형태             | 내용                        | 필수 | 비고 |
+|----------|----------------|---------------------------|----|----|
+| token    | string(40)     | 매체사 식별키                   | O  |    |
+| campid   | int            | 캠페인 식별값                   | O  |    |
+| text     | string(65,535) | 사용자 정답 입력값                | O  |    |
+| adid     | string(40)     | AOS일 경우adid, iOS일 경우 idfa | O  |
+| click_id | string(38)     | '참여API'의 응답으로 받은 click_id | O  |    |
+
+### 응답
+
+| 항목      | 형태      | 내용    |
+|---------|---------|-------|
+| isMatch | boolean | 매칭 여부 |
+| status  | int     | 응답코드  |
+
+---
 ## 공통
 - result로 반환되는 코드 목록입니다
 
