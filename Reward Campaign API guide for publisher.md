@@ -206,7 +206,7 @@ camp -> detail_type 세부 항목
 
 #### 참고 : 방화벽 등 보안 설정이 되어 있는 경우 아래 주소로 호출해주세요
 - <code>URL : https://click.adbc.io/reward/v3/join</code>
-- <code>허용할 IP : 3.37.102.179, 43.202.31.186</code>
+- <code>허용할 IP : 13.209.31.69, 43.200.145.39</code>
 - <code>허용할 Port : 443</code> 
 
 
