@@ -164,34 +164,6 @@ curl -X GET "https://cp.adbc.io/key-search-api?pub_id=12345678&tsource=example.c
 
 ## 연동 구현
 
-### JavaScript (프론트엔드)
-
-```javascript
-async function loadKeySearchData() {
-  const params = new URLSearchParams({
-    pub_id: 'my_publisher',
-    tsource: 'www.example.com'
-  });
-
-  try {
-    const response = await fetch(`https://cp.adbc.io/key-search-api?${params}`);
-    const data = await response.json();
-
-    if (data.success) {
-      console.log(`${data.keyword_count}개 키워드, ${data.product_count}개 상품 로드 완료`);
-      console.log(`갱신 시간: ${data.updated_at}`);
-      return data;
-    } else {
-      console.error('API 오류:', data.error);
-      return null;
-    }
-  } catch (error) {
-    console.error('네트워크 오류:', error);
-    return null;
-  }
-}
-```
-
 ### Python (서버 사이드)
 
 ```python
@@ -334,20 +306,11 @@ adbc 운영팀에 문의하시면 매체별로 고유한 `pub_id`를 발급해 �
 ### Q2. tsource 파라미터 형식은?
 
 프로토콜(`https://`, `http://`)과 경로(`/path`)를 제외한 도메인 또는 앱 번들명을 입력합니다.
+이 파라미터는 adbc에서 발급받아야 합니다.
 
 - **올바른 예**: `www.example.com`, `com.example.app`
 - **잘못된 예**: `https://www.example.com/path`
 
-### Q3. 데이터가 없을 때 어떻게 처리하나요?
-
-API 응답의 `success`가 `false`이거나 `data`가 비어있으면 대체 콘텐츠를 표시합니다.
-
-```javascript
-if (!data.success || data.data.length === 0) {
-  // 패스백 URL 호출 또는 대체 콘텐츠 표시
-  showAlternativeContent();
-}
-```
 
 ### Q3. 데이터는 언제 갱신되나요?
 
